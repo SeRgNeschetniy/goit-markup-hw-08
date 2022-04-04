@@ -1,0 +1,23 @@
+.logo {
+  @extend .link;
+
+  display: block;
+  padding: 24px 0 25px 0;
+
+  color: var(--secondary-text-color);
+  font: 700 26px/1.19 'Raleway', sans-serif;
+
+  &__accent {
+    color: var(--accent-color);
+  }
+
+  &__light {
+    @extend .link;
+
+    display: block;
+    margin-bottom: 30px;
+
+    font: 700 26px/1.19 'Raleway', sans-serif;
+    color: var(--primary-white-color);
+  }
+}

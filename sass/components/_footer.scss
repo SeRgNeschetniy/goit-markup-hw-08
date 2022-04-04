@@ -1,0 +1,123 @@
+.footer {
+  padding: 60px 0;
+  background-color: #2f303a;
+
+  &__wrapp {
+    display: flex;
+    align-items: baseline;
+  }
+  &__address {
+    color: var(--primary-white-color);
+    margin-bottom: 9px;
+  }
+  &__link {
+    @extend .link;
+
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  &__item + &__item {
+    margin-top: 9px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1, 142857142857143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
+
+  &__socials {
+    margin-left: 70px;
+  }
+
+  &__subscription {
+    margin-left: 93px;
+  }
+}
+
+.join-links {
+  @extend .list;
+
+  display: flex;
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--primary-white-color);
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: var(--primary-white-color);
+      background-color: var(--accent-color);
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+.subscription {
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px 15px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    background: transparent;
+  }
+  &__submit {
+    display: inline-flex;
+
+    width: 200px;
+    height: 50px;
+
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    padding: 10px 29px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+
+    color: #ffffff;
+  }
+  &__icon {
+    margin-left: 10px;
+    fill: var(--primary-white-color);
+  }
+}
