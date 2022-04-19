@@ -1,7 +1,17 @@
+.activity {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .activity-list {
   @extend .list;
 
-  display: flex;
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
 
   &__item {
     position: relative;
